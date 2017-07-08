@@ -4,6 +4,9 @@ fi
 
 export EDITOR=vim
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
 export DOTFILES_PATH=$(cd "$(dirname $(readlink -m ~/.zshrc))" && git rev-parse --show-toplevel)
 
 export NVM_DIR=$(readlink -m "$HOME/.nvm")
