@@ -4,8 +4,13 @@ fi
 
 export EDITOR=vim
 export PATH="$HOME/.local/bin:$PATH"
+
+# Homebrew
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/gettext/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+#    LDFLAGS:  -L/usr/local/opt/gettext/lib
+#    CPPFLAGS: -I/usr/local/opt/gettext/include
 
 export DOTFILES_PATH=$(cd "$(dirname $(readlink -m ~/.zshrc))" && git rev-parse --show-toplevel)
 
