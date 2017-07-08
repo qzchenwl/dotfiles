@@ -6,9 +6,14 @@ export EDITOR=vim
 export PATH="$HOME/.local/bin:$PATH"
 
 # Homebrew
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/gettext/bin:$PATH"
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/file-formula/bin:$PATH"
+export PATH="/usr/local/opt/unzip/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export MANPATH="/usr/local/opt/make/libexec/gnuman:$MANPATH"
 #    LDFLAGS:  -L/usr/local/opt/gettext/lib
 #    CPPFLAGS: -I/usr/local/opt/gettext/include
 
