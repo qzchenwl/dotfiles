@@ -50,6 +50,7 @@ services:
     image: qzchenwl/quickserve
     volumes:
       - "$SHARE:/share"
+      - "/data/raid10/test/AVA_dataset:/share/AVA_dataset"
     command: /share --upload /share
 
   aria2:
