@@ -32,14 +32,3 @@ LIQUID_PROMPT="$DOTFILES_PATH/misc/shell/liquidprompt/"
 #[ -n "$PS1" ] && [ -s "$LIQUID_PROMPT/liquidprompt" ] && source "$LIQUID_PROMPT/liquidprompt"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f ~/.zshrc.post ] && source ~/.zshrc.post
-
-#if [ -z "${TMUX}${SSH_CLIENT}${SSH_TTY}" ]; then
-#    sc=$(tmux ls -F '#{session_name}_#{session_attached}' | grep '^α_[0-9]\+$')
-#    if [ "$sc" = "" ]; then
-#        tmux -2 new -s α
-#    elif [ "$sc" = "α_0" ]; then
-#        tmux -2 attach -t α
-#    fi
-#fi
-
