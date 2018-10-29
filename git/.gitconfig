@@ -1,6 +1,29 @@
 [init]
   templatedir = ~/.gittemplates
 [include]
+[include]
+  path = gitconfig.d/alias.txt
+  path = gitconfig.d/alias-for-cvs.txt
+  path = gitconfig.d/alias-for-feature-flow.txt
+  path = gitconfig.d/alias-for-gitk.txt
+  path = gitconfig.d/alias-for-rails.txt
+  path = gitconfig.d/alias-for-svn.txt
+  path = gitconfig.d/apply.txt
+  path = gitconfig.d/branch.txt
+  path = gitconfig.d/color.txt
+  path = gitconfig.d/core.txt
+  path = gitconfig.d/diff.txt
+  path = gitconfig.d/github.txt
+  path = gitconfig.d/merge.txt
+  path = gitconfig.d/mergetool.txt
+  path = gitconfig.d/push.txt
+  path = gitconfig.d/rerere.txt
+  path = gitconfig.d/user.txt
+
+  # You may uncomment one of these for your specific system:
+  # path = gitconfig.d/specific-to-linux.txt
+  # path = gitconfig.d/specific-to-osx.txt
+  # path = gitconfig.d/specific-to-windows.txt
 	path = ~/.gitconfig.d/gitconfig
 [core]
 	pager = less -F -X -R
@@ -20,3 +43,6 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[user]
+	name = 陈文龙
+	email = chenwenlong02@meituan.com
