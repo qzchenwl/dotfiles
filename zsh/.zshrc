@@ -4,7 +4,7 @@ ZSH_THEME="fishy"
 plugins=(git command-not-found vi-mode z httpie emoji)
 
 source $ZSH/oh-my-zsh.sh
-export PS1='%{$fg[$user_color]%}$(_fishy_collapsed_wd)%{$reset_color%}%(!.#.>) '
+export PS1='%{$fg_bold[white]%}%M %{$fg[$user_color]%}$(_fishy_collapsed_wd)%{$reset_color%}%(!.#.>) '
 
 #################### CUSTOM ######################
 
