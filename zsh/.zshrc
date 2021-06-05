@@ -1,21 +1,13 @@
-if [ -f "$HOME/.zshrc.pre" ]; then
-  source "$HOME/.zshrc.pre"
+if [ -f "$HOME/.env.sh" ]; then
+  source "$HOME/.env.sh"
 fi
 
 export EDITOR=vim
-export PATH="$HOME/.local/bin:$PATH"
 
 # Homebrew
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="/usr/local/opt/gettext/bin:$PATH"
-export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
-export PATH="/usr/local/opt/file-formula/bin:$PATH"
-export PATH="/usr/local/opt/unzip/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export MANPATH="/usr/local/opt/make/libexec/gnuman:$MANPATH"
-#    LDFLAGS:  -L/usr/local/opt/gettext/lib
-#    CPPFLAGS: -I/usr/local/opt/gettext/include
 
 export DOTFILES_PATH=$(cd "$(dirname $(readlink -m ~/.zshrc))" && git rev-parse --show-toplevel)
 
@@ -120,13 +112,4 @@ LIQUID_PROMPT="$DOTFILES_PATH/misc/shell/liquidprompt/"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc.post ] && source ~/.zshrc.post
-
-if [ -z "${TMUX}${SSH_CLIENT}${SSH_TTY}" ]; then
-    sc=$(tmux ls -F '#{session_name}_#{session_attached}' | grep '^α_[0-9]\+$')
-    if [ "$sc" = "" ]; then
-        tmux -2 new -s α
-    elif [ "$sc" = "α_0" ]; then
-        tmux -2 attach -t α
-    fi
-fi
 

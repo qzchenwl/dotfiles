@@ -4,7 +4,8 @@
 	path = ~/.gitconfig.d/gitconfig
 [core]
 	pager = less -F -X -R
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/vim
+	quotepath = false
 [alias]
 	s = status -sb
 [merge]
