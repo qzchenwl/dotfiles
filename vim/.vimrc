@@ -91,7 +91,7 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Colorscheme
-Plug 'chriskempson/base16-vim'
+"Plug 'chriskempson/base16-vim'
 
 " For Programming Languages
 Plug 'vim-syntastic/syntastic'
@@ -196,10 +196,10 @@ set mouse=a
 
 " Colors and Fonts {{{
 
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+"if filereadable(expand("~/.vimrc_background"))
+"  let base16colorspace=256
+"  source ~/.vimrc_background
+"endif
 
 " Adjust signscolumn to match wombat
 hi! link SignColumn LineNr
